@@ -16,7 +16,7 @@ const connectDb = async () => {
     })
 
   await client.connect()
-  const res = await client.query('SELECT * FROM some_table')
+  const res = await client.query('SELECT * FROM birdUsers')
   console.log(res)
   await client.end()
   } catch (error) {
